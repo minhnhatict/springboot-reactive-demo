@@ -6,9 +6,6 @@ spring:
     config:
       enabled: false
 
-  config:
-    import: optional:http://localhost:8081/discovery-app.properties
-
 eureka:
   client:
     fetch-registry: false
