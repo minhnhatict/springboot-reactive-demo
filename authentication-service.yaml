@@ -9,3 +9,5 @@ eureka:
 spring:
   application:
     name: authentication-service
+
+endpoint.login=${AUTHENTICATION_SERVICE}/api/authenticaion/login
