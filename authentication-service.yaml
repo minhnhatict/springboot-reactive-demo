@@ -9,8 +9,3 @@ eureka:
 spring:
   application:
     name: authentication-service
-  cloud:
-    config:
-      enabled: false
-  config:
-    import: optional:http://localhost:8081/authentication-service.yaml
