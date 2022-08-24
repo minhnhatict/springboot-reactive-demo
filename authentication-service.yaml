@@ -1,0 +1,16 @@
+server:
+  port: 8083
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:password@${EUREKA_SERVER:localhost}:8761/eureka
+
+spring:
+  application:
+    name: authentication-service
+  cloud:
+    config:
+      enabled: false
+  config:
+    import: optional:http://localhost:8081/authentication-service.yaml
