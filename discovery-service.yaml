@@ -2,6 +2,9 @@ spring:
   cloud:
     config:
       enabled: false
+  client:
+    service-url:
+      defaultZone: http://eureka:password@${eureka_server}/eureka
 
 eureka:
   client:
